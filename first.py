@@ -19,9 +19,11 @@ def downloadFont(fontname, font_url):
 
     print(f"[NOTE]: Extracted into {vesti_dummy}")
 
+
 os.makedirs(vesti_dummy, exist_ok=True)
 downloadFont(
     "Tex Gyre Pagella", "https://www.fontsquirrel.com/fonts/download/TeX-Gyre-Pagella"
 )
+if vesti.engineType() != "tect":
+    downloadFont("Noto Fonts", "https://mirrors.ctan.org/fonts/noto.zip")
 downloadFont("STIX Two Math", "https://font.download/dl/font/stix-two-math.zip")
-

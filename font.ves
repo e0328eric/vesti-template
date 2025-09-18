@@ -11,6 +11,12 @@ importpkg {
     UprightFont  = *-regular,
     BoldFont  = *-bold,
 ]
+\setsansfont{NotoSans}[
+    Path,
+    Extension = .ttf,
+    UprightFont  = *-Regular,
+    BoldFont  = *-Bold,
+]
 \setmathfont{STIXTwoMath-Regular}[
     Path,
     Extension = .ttf,
