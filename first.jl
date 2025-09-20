@@ -1,11 +1,11 @@
-using Pkg
+import Pkg
 if !haskey(Pkg.dependencies(), "ZipFile")
     Pkg.add("ZipFile")
 end
 
-using Downloads
-using ZipFile
-using .Vesti
+import Downloads
+import ZipFile
+import .Vesti
 
 vesti_dummy = Vesti.get_dummy_dir()
 
@@ -22,7 +22,7 @@ function download_font(fontname::String, font_url::String)
         write(outpath, read(file))
     end
 
-    println("[NOTE]: Extracted into $vesti_dummy")
+    println("[NOTE]: Extracted $output_path into $vesti_dummy")
 end
 
 mkpath(vesti_dummy)
