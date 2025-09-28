@@ -2,7 +2,7 @@
     .name = "template",
     .version = "1.1.1",
     .exports = .{
-        .{ .name = "build.jl", .location = "." },
+        .{ .name = "before.jl", .location = "." },
         .{ .name = "font.ves", .location = "." },
     },
 }
