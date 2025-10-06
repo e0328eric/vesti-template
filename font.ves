@@ -22,7 +22,7 @@ importpkg {
     Extension = .ttf,
 ]
 
-#umathchardef .ordinary 0 2202 \diff
+#mathchardef .ordinary 0 2202 \diff
 \def\thefootnote{(\roman{footnote})}
 
 defun defeq {\coloneq}
