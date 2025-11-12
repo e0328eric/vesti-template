@@ -26,11 +26,11 @@ importpkg {
 #mathchardef .ordinary 0 2202 \diff
 \def\thefootnote{(\roman{footnote})}
 
-defun [r!] defeq {\coloneq}
-defun [r!] eqdef {\eqcolon}
+#raw_tex defun [r!] defeq {\coloneq}
+#raw_tex defun [r!] eqdef {\eqcolon}
 defun [r] Re {#mathmode{\mathop{"Re"}}}
 defun [r] Im {#mathmode{\mathop{"Im"}}}
-defun [r] I {\bbb{1}}
+defun I {\bbb{1}}
 defun llo {\lParen}
 defun rro {\rParen}
 defun llc {\lBrack}
