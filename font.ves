@@ -5,12 +5,12 @@ importpkg {
     unicode-math,
 }
 
-\setmainfont{texgyrepagella}[
+\setmainfont{Erewhon}[
     Path,
     Extension = .otf,
-    UprightFont  = *-regular,
-    BoldFont  = *-bold,
-    ItalicFont  = *-italic,
+    UprightFont  = *-Regular,
+    BoldFont  = *-Bold,
+    ItalicFont  = *-Italic,
 ]
 \setsansfont{NotoSans}[
     Path,
@@ -18,9 +18,10 @@ importpkg {
     UprightFont  = *-Regular,
     BoldFont  = *-Bold,
 ]
-\setmathfont{STIXTwoMath-Regular}[
+\setmathfont{Erewhon-Math}[
     Path,
-    Extension = .ttf,
+    Extension = .otf,
+    BoldFont  = *-Bold,
 ]
 
 #mathchardef .ordinary 0 2202 \diff
