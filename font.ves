@@ -5,23 +5,16 @@ importpkg {
     unicode-math,
 }
 
-\setmainfont{Erewhon}[
+\setmainfont{STIXTwoText}[
     Path,
     Extension = .otf,
     UprightFont  = *-Regular,
     BoldFont  = *-Bold,
     ItalicFont  = *-Italic,
 ]
-\setsansfont{NotoSans}[
-    Path,
-    Extension = .ttf,
-    UprightFont  = *-Regular,
-    BoldFont  = *-Bold,
-]
-\setmathfont{Erewhon-Math}[
+\setmathfont{STIXTwoMath-Regular}[
     Path,
     Extension = .otf,
-    BoldFont  = *-Bold,
 ]
 
 #mathchardef .ordinary 0 2202 \diff
