@@ -16,6 +16,13 @@ importpkg {
     Path,
     Extension = .otf,
 ]
+\setsansfont{Overlock}[
+    Path,
+    Extension = .otf,
+    UprightFont  = *-Regular-OTF,
+    BoldFont  = *-Bold-OTF,
+    ItalicFont  = *-Italic-OTF,
+]
 
 #mathchardef .ordinary 0 2202 \diff
 \def\thefootnote{(\roman{footnote})}

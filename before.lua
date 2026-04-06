@@ -8,15 +8,24 @@ end
 local vesti_dummy = vesti.vestiDummyDir()
 vesti.mkdir(vesti_dummy)
 
-local fonts_prefix = "https://mirrors.ctan.org/fonts/stix2-otf/"
+local stix2_fonts_prefix = "https://mirrors.ctan.org/fonts/stix2-otf/"
+local overlock_fonts_prefix = "https://mirrors.ctan.org/fonts/overlock/opentype/"
 
-local fonts = {
+local stix2_fonts = {
     "STIXTwoText-Regular.otf",
     "STIXTwoText-Bold.otf",
     "STIXTwoText-Italic.otf",
     "STIXTwoMath-Regular.otf",
 }
+local overlock_fonts = {
+    "Overlock-Regular-OTF.otf",
+    "Overlock-Bold-OTF.otf",
+    "Overlock-Italic-OTF.otf",
+}
 
-for _, font in ipairs(fonts) do
-    download_if_missing(fonts_prefix .. font, vesti.joinpath(vesti_dummy, font))
+for _, font in ipairs(stix2_fonts) do
+    download_if_missing(stix2_fonts_prefix .. font, vesti.joinpath(vesti_dummy, font))
+end
+for _, font in ipairs(overlock_fonts) do
+    download_if_missing(overlock_fonts_prefix .. font, vesti.joinpath(vesti_dummy, font))
 end
