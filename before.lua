@@ -1,7 +1,9 @@
-local function download_if_missing(url, dest)
+local function download_if_missing(font, url_prefix, dest)
     local f <close> = io.open(dest, "r")
     if not f then
-        vesti.download(url, dest)
+        print("downloading `" .. font .. "`")
+        vesti.download(url_prefix .. font, dest)
+        print("downloading `" .. font .. "` complete")
     end
 end
 
@@ -24,8 +26,8 @@ local overlock_fonts = {
 }
 
 for _, font in ipairs(stix2_fonts) do
-    download_if_missing(stix2_fonts_prefix .. font, vesti.joinpath(vesti_dummy, font))
+    download_if_missing(font, stix2_fonts_prefix, vesti.joinpath(vesti_dummy, font))
 end
 for _, font in ipairs(overlock_fonts) do
-    download_if_missing(overlock_fonts_prefix .. font, vesti.joinpath(vesti_dummy, font))
+    download_if_missing(font, overlock_fonts_prefix, vesti.joinpath(vesti_dummy, font))
 end
